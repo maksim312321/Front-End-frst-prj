@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
+        <form action="https://vk.com/away.php?utf=1&to=https%3A%2F%2F60376bfd5435040017722533.mockapi.io%2FformRej", method = "post">
+          <div class="form-group">
+            <label>Задать вопрос</label>
+            <input type = "text" name = "user_name" onkeyup="var yratext=/['0-9','A-z',':']/; if(yratext.test(this.value)) this.value=''" class="form-control" placeholder="Фамилия Имя Отечество *" autofocus required>
+          </div>
+          <div class="form-group">
+            <input type = "text" name = "user_phone" onkeyup="var yratext=/['А-я','A-z',':']/; if(yratext.test(this.value)) this.value=''" class="form-control" placeholder="Телефон *" autofocus required >
+          </div>
+          <div class="form-group">
+            <input type = "text" name = "user_e-mail" onkeyup="var yratext=/['А-я',':']/; if(yratext.test(this.value)) this.value=''" class="form-control" placeholder="Email" autofocus required required pattern="\S+@[a-z]+.[a-z]+">
+          </div>
+            <button type="submit" class="btn btn-primary">Отправить запрос</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+    let tel = Document.querySelector('#tel');
+    let el = Document.querySelector('.span');
+    let regex = /[0-9]/g;
+    tel.oninput = function(){
+      this.value = this.value.replace(reg, '');
+    }
+  </script> -->
+</body>
+</html>
